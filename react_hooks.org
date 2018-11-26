@@ -13,13 +13,30 @@
 * What is React Hooks
 #+REVEAL_HTML: <blockquote>Use state and other React features without writing a class</blockquote>
 ** What's the problem now
- - Wrapper hell
- - Huge components
- - Confusing classes
+*** Reuse stateful logic between components
+    - Existing way: render props and higher order components
+    - example: Media query component or windows width change or React Motion?
 *** Wrapper Hell
-*** Huge components
+    - because we're using HOC, so we have wrapper hell
+*** Complex components become hard to understand
+    - addEventListener in two place(CDM, CWM)
+    - ajaxCall in CDM and CDU
+    - hard to testing, that's why you need redux but using redux introduce complexity for sharing component
 *** Confusing classes
-** limitation of hooks
+    - how `this` works?
+    - when to use class and when to use function?
+    - hard for optimize(minify not well, make hot reloading flaky and unreliable)
+* Hooks demo
+* Basic concept of hooks
+- useState
+- useEffect
+- useReducer
+- customHooks
+* Limitation of hooks and why
 - Can't wrapper into condition
+* Why react hooks
+* Is hooks ready for today?
+- technically, yes, is in v16.7.0-alpha
+- but you better to try this on non-critical component first
 * Q&A
 * Thanks

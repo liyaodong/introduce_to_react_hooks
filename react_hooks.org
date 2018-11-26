@@ -17,6 +17,8 @@
     - Existing way: render props and higher order components
     - example: Media query component or windows width change or React Motion?
 *** Wrapper Hell
+    #+REVEAL_HTML: <img class="stretch" src="https://cdn-images-1.medium.com/max/1600/1*SU5_ws88Kh_Oio_L4Myhvg.png">
+*** Wrapper Hell
     - because we're using HOC, so we have wrapper hell
 *** Complex components become hard to understand
     - addEventListener in two place(CDM, CWM)
@@ -35,6 +37,7 @@
 * Limitation of hooks and why
 - Can't wrapper into condition
 * Why react hooks
+* How react hooks works under the wood?
 * Is hooks ready for today?
 - technically, yes, is in v16.7.0-alpha
 - but you better to try this on non-critical component first

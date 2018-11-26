@@ -29,38 +29,42 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,900" rel="stylesheet">
 
 <section>
-<section id="slide-orga97c826">
-<h2 id="orga97c826">Introduce to React Hooks</h2>
+<section id="slide-org61d96cb">
+<h2 id="org61d96cb">Introduce to React Hooks</h2>
 <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K" alt="" height="200">
 </section>
 </section>
 <section>
-<section id="slide-org69ef6ba">
-<h2 id="org69ef6ba">What is React Hooks</h2>
+<section id="slide-org0683855">
+<h2 id="org0683855">What is React Hooks</h2>
 <blockquote>Use state and other React features without writing a class</blockquote>
 </section>
-<section id="slide-org6060538">
-<h3 id="org6060538">What's the problem now</h3>
-<div class="outline-text-3" id="text-org6060538">
+<section id="slide-org051a454">
+<h3 id="org051a454">What's the problem now</h3>
+<div class="outline-text-3" id="text-org051a454">
 </div>
 </section>
-<section id="slide-orgc77a6de">
-<h4 id="orgc77a6de">Reuse stateful logic between components</h4>
+<section id="slide-org745e232">
+<h4 id="org745e232">Reuse stateful logic between components</h4>
 <ul>
 <li>Existing way: render props and higher order components</li>
 <li>example: Media query component or windows width change or React Motion?</li>
 
 </ul>
 </section>
-<section id="slide-orgd0f8c81">
-<h4 id="orgd0f8c81">Wrapper Hell</h4>
+<section id="slide-org3a073d2">
+<h4 id="org3a073d2">Wrapper Hell</h4>
+<img class="stretch" src="https://cdn-images-1.medium.com/max/1600/1*SU5_ws88Kh_Oio_L4Myhvg.png">
+</section>
+<section id="slide-org0f86303">
+<h4 id="org0f86303">Wrapper Hell</h4>
 <ul>
 <li>because we're using HOC, so we have wrapper hell</li>
 
 </ul>
 </section>
-<section id="slide-orgeebd6d0">
-<h4 id="orgeebd6d0">Complex components become hard to understand</h4>
+<section id="slide-org4ffb25c">
+<h4 id="org4ffb25c">Complex components become hard to understand</h4>
 <ul>
 <li>addEventListener in two place(CDM, CWM)</li>
 <li>ajaxCall in CDM and CDU</li>
@@ -68,8 +72,8 @@
 
 </ul>
 </section>
-<section id="slide-org5454de7">
-<h4 id="org5454de7">Confusing classes</h4>
+<section id="slide-org9a2b652">
+<h4 id="org9a2b652">Confusing classes</h4>
 <ul>
 <li>how `this` works?</li>
 <li>when to use class and when to use function?</li>
@@ -79,13 +83,13 @@
 </section>
 </section>
 <section>
-<section id="slide-org5daea29">
-<h2 id="org5daea29">Hooks demo</h2>
+<section id="slide-orgd8c4f4e">
+<h2 id="orgd8c4f4e">Hooks demo</h2>
 </section>
 </section>
 <section>
-<section id="slide-org5efd0d8">
-<h2 id="org5efd0d8">Basic concept of hooks</h2>
+<section id="slide-org36af19b">
+<h2 id="org36af19b">Basic concept of hooks</h2>
 <ul>
 <li>useState</li>
 <li>useEffect</li>
@@ -96,8 +100,8 @@
 </section>
 </section>
 <section>
-<section id="slide-orgf68e387">
-<h2 id="orgf68e387">Limitation of hooks and why</h2>
+<section id="slide-orgcdcff3b">
+<h2 id="orgcdcff3b">Limitation of hooks and why</h2>
 <ul>
 <li>Can't wrapper into condition</li>
 
@@ -105,13 +109,18 @@
 </section>
 </section>
 <section>
-<section id="slide-org7f5a3f7">
-<h2 id="org7f5a3f7">Why react hooks</h2>
+<section id="slide-org1d205bb">
+<h2 id="org1d205bb">Why react hooks</h2>
 </section>
 </section>
 <section>
-<section id="slide-orge93cad8">
-<h2 id="orge93cad8">Is hooks ready for today?</h2>
+<section id="slide-org92b7318">
+<h2 id="org92b7318">How react hooks works under the wood?</h2>
+</section>
+</section>
+<section>
+<section id="slide-orga872ada">
+<h2 id="orga872ada">Is hooks ready for today?</h2>
 <ul>
 <li>technically, yes, is in v16.7.0-alpha</li>
 <li>but you better to try this on non-critical component first</li>
@@ -120,13 +129,13 @@
 </section>
 </section>
 <section>
-<section id="slide-orgae61c20">
-<h2 id="orgae61c20">Q&amp;A</h2>
+<section id="slide-org7fd4d87">
+<h2 id="org7fd4d87">Q&amp;A</h2>
 </section>
 </section>
 <section>
-<section id="slide-org55b0fc1">
-<h2 id="org55b0fc1">Thanks</h2>
+<section id="slide-org5cc7179">
+<h2 id="org5cc7179">Thanks</h2>
 </section>
 </section>
 </div>

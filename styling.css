@@ -39,11 +39,71 @@ body::before {
 .reveal h2 {
     color: #fff;
     transform: skewX(-10deg);
-    background: linear-gradient(36deg, #61dafb, #00799a, #282c34);
+    background: linear-gradient(36deg, #203b48, #00799a, #282c34);
     padding: 10px;
     font-weight: 100;
 }
 
 .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
     color: rgba(42, 121, 197, 1.00);
+}
+
+.reveal pre code {
+    max-height: 60vh;
+}
+
+.logo-heading {
+    min-height: 45vh;
+}
+
+.logo {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    font-size: 1rem !important;
+    background-color: #203b48;
+}
+.logo span {
+    content: "";
+    width: 175%;
+    height: 450%;
+    background-color: transparent;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation: shadow 1s linear infinite;
+}
+.logo span:nth-child(1) {
+    transform: translate(-50%, -50%) rotate(35deg);
+}
+.logo span:nth-child(2) {
+    transform: translate(-50%, -50%) rotate(-35deg);
+    animation-delay: -0.66s;
+}
+.logo span:nth-child(3) {
+    transform: translate(-50%, -50%) rotate(90deg);
+    animation-delay: -0.33s;
+}
+
+@keyframes shadow {
+    0% {
+        box-shadow: 0.6em -0.6em 0 0 #203b48;
+    }
+    25% {
+        box-shadow: 0.6em 0.6em 0 0 #203b48;
+    }
+    50% {
+        box-shadow: -0.6em 0.6em 0 0 #203b48;
+    }
+    75% {
+        box-shadow: -0.6em -0.6em 0 0 #203b48;
+    }
+    100% {
+        box-shadow: 0.6em -0.6em 0 0 #203b48;
+    }
 }

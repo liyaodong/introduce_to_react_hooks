@@ -29,42 +29,42 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,900" rel="stylesheet">
 
 <section>
-<section id="slide-org0c54d49">
-<h2 id="org0c54d49">Introduce to React Hooks</h2>
+<section id="slide-orgec93149">
+<h2 id="orgec93149">Introduce to React Hooks</h2>
 <div class="logo-heading"></div><div class="logo"><span></span><span></span><span></span></div>
 </section>
 </section>
 <section>
-<section id="slide-org7e65fb8">
-<h2 id="org7e65fb8">What is React Hooks</h2>
+<section id="slide-org8cb8d79">
+<h2 id="org8cb8d79">What is React Hooks</h2>
 <blockquote>Use state and other React features without writing a class</blockquote>
 </section>
-<section id="slide-orgdb0e9c1">
-<h3 id="orgdb0e9c1">What's the problem now</h3>
-<div class="outline-text-3" id="text-orgdb0e9c1">
+<section id="slide-org1f53388">
+<h3 id="org1f53388">What's the problem now</h3>
+<div class="outline-text-3" id="text-org1f53388">
 </div>
 </section>
-<section id="slide-orge0ff21e">
-<h4 id="orge0ff21e">Reuse stateful logic between components</h4>
+<section id="slide-orga1bc5d5">
+<h4 id="orga1bc5d5">Reuse stateful logic between components</h4>
 <ul>
 <li>Existing way: render props and higher order components</li>
 <li>example: Media query component or windows width change or React Motion?</li>
 
 </ul>
 </section>
-<section id="slide-org4c3dfbb">
-<h4 id="org4c3dfbb">Wrapper Hell</h4>
+<section id="slide-org7644539">
+<h4 id="org7644539">Wrapper Hell</h4>
 <img class="stretch" src="https://cdn-images-1.medium.com/max/1600/1*SU5_ws88Kh_Oio_L4Myhvg.png">
 </section>
-<section id="slide-org2bc9978">
-<h4 id="org2bc9978">Wrapper Hell</h4>
+<section id="slide-org9273f5e">
+<h4 id="org9273f5e">Wrapper Hell</h4>
 <ul>
 <li>because we're using HOC, so we have wrapper hell</li>
 
 </ul>
 </section>
-<section id="slide-org911e84b">
-<h4 id="org911e84b">Complex components become hard to understand</h4>
+<section id="slide-org30c0da0">
+<h4 id="org30c0da0">Complex components become hard to understand</h4>
 <ul>
 <li>addEventListener in two place(CDM, CWM)</li>
 <li>ajaxCall in CDM and CDU</li>
@@ -72,8 +72,8 @@
 
 </ul>
 </section>
-<section id="slide-org915701a">
-<h4 id="org915701a">Confusing classes</h4>
+<section id="slide-org81258c3">
+<h4 id="org81258c3">Confusing classes</h4>
 <ul>
 <li>how `this` works?</li>
 <li>when to use class and when to use function?</li>
@@ -83,8 +83,8 @@
 </section>
 </section>
 <section>
-<section id="slide-org4c57e21">
-<h2 id="org4c57e21">Hooks demo</h2>
+<section id="slide-org1435650">
+<h2 id="org1435650">Hooks demo</h2>
 <div class="org-src-container">
 
 <pre><code class="javascript" >import React, { Fragment, useState } from 'react';
@@ -156,8 +156,8 @@ export function Greeting() {
 </section>
 </section>
 <section>
-<section id="slide-org8e81361">
-<h2 id="org8e81361">Basic concept of hooks</h2>
+<section id="slide-org3e75544">
+<h2 id="org3e75544">Basic concept of hooks</h2>
 <ul>
 <li>useState</li>
 <li>useEffect</li>
@@ -166,8 +166,8 @@ export function Greeting() {
 
 </ul>
 </section>
-<section id="slide-orgda09c5a">
-<h3 id="orgda09c5a">useState</h3>
+<section id="slide-orgeabb4ff">
+<h3 id="orgeabb4ff">useState</h3>
 <div class="org-src-container">
 
 <pre><code class="javascript" >function ExampleWithManyStates() {
@@ -180,8 +180,8 @@ export function Greeting() {
 </code></pre>
 </div>
 </section>
-<section id="slide-orga5dcb76">
-<h3 id="orga5dcb76">useEffect</h3>
+<section id="slide-orgd6e26ad">
+<h3 id="orgd6e26ad">useEffect</h3>
 <ul>
 <li>side effects -  can affect other components and can’t be done during rendering</li>
 <li>React runs the effects after every render — including the first render</li>
@@ -190,8 +190,8 @@ export function Greeting() {
 
 </ul>
 </section>
-<section id="slide-orgdacd81e">
-<h3 id="orgdacd81e">useEffect</h3>
+<section id="slide-orgb7a661d">
+<h3 id="orgb7a661d">useEffect</h3>
 <p>
 cDM &amp; cDU
 </p>
@@ -219,8 +219,8 @@ function Example() {
 </code></pre>
 </div>
 </section>
-<section id="slide-org9b33d65">
-<h3 id="org9b33d65">useEffect</h3>
+<section id="slide-orgac96ff4">
+<h3 id="orgac96ff4">useEffect</h3>
 <p>
 cWU
 </p>
@@ -251,8 +251,8 @@ function FriendStatus(props) {
 </code></pre>
 </div>
 </section>
-<section id="slide-org2b25760">
-<h3 id="org2b25760">Custom Hooks</h3>
+<section id="slide-orgdc1a63b">
+<h3 id="orgdc1a63b">Custom Hooks</h3>
 <ul>
 <li>replace igher-order components and render props for reuse statefull logic</li>
 <li>naming convention is `useSomething`</li>
@@ -260,8 +260,8 @@ function FriendStatus(props) {
 
 </ul>
 </section>
-<section id="slide-org1f0a889">
-<h3 id="org1f0a889">Custom Hooks</h3>
+<section id="slide-orgdd52981">
+<h3 id="orgdd52981">Custom Hooks</h3>
 <div class="org-src-container">
 
 <pre><code class="javascript" >import React, { Fragment, useState, useEffect } from 'react';
@@ -317,8 +317,8 @@ export function CustomHook() {
 </code></pre>
 </div>
 </section>
-<section id="slide-org2710ca1">
-<h3 id="org2710ca1">useContext</h3>
+<section id="slide-org08d7898">
+<h3 id="org08d7898">useContext</h3>
 <ul>
 <li>new Context API released in react 16.3</li>
 
@@ -333,8 +333,8 @@ export function CustomHook() {
 </code></pre>
 </div>
 </section>
-<section id="slide-org3291101">
-<h3 id="org3291101">useReducer</h3>
+<section id="slide-orgd0d878e">
+<h3 id="orgd0d878e">useReducer</h3>
 <p>
 Use hooks like redux
 </p>
@@ -401,8 +401,8 @@ export default PokemonInfo;
 </code></pre>
 </div>
 </section>
-<section id="slide-org6c594cf">
-<h3 id="org6c594cf">other hooks</h3>
+<section id="slide-org56d8da2">
+<h3 id="org56d8da2">other hooks</h3>
 <ul>
 <li>useRef</li>
 <li>useMemo</li>
@@ -412,27 +412,27 @@ export default PokemonInfo;
 </section>
 </section>
 <section>
-<section id="slide-org5773d5a">
-<h2 id="org5773d5a">How react hooks works under the hood?</h2>
-<div class="outline-text-2" id="text-org5773d5a">
+<section id="slide-org8720fb5">
+<h2 id="org8720fb5">How react hooks works under the hood?</h2>
+<div class="outline-text-2" id="text-org8720fb5">
 </div>
 </section>
-<section id="slide-org02746d4">
-<h3 id="org02746d4">when react will call useEffect?</h3>
+<section id="slide-orga451529">
+<h3 id="orga451529">when react will call useEffect?</h3>
 <p>
 By using this Hook, you tell React that your component needs to do something after render. React will remember the function you passed (we’ll refer to it as our “effect”), and call it later after performing the DOM updates.
 </p>
 </section>
-<section id="slide-org175828a">
-<h3 id="org175828a">Does useEffect run after every render?</h3>
+<section id="slide-org507fda2">
+<h3 id="org507fda2">Does useEffect run after every render?</h3>
 <ul>
 <li>Yes! By default, it runs both after the first render and after every update.</li>
 <li>but you can pass second argument to skip effect</li>
 
 </ul>
 </section>
-<section id="slide-org37a80a9">
-<h4 id="org37a80a9">effect will run after every render</h4>
+<section id="slide-orge36594d">
+<h4 id="orge36594d">effect will run after every render</h4>
 <div class="org-src-container">
 
 <pre><code class="javascript" >function FriendStatus(props) {
@@ -462,8 +462,8 @@ ChatAPI.unsubscribeFromFriendStatus(300, handleStatusChange); // Clean up last e
 </code></pre>
 </div>
 </section>
-<section id="slide-org209bf78">
-<h4 id="org209bf78">skip effect by pass second argument</h4>
+<section id="slide-org8bdcbb3">
+<h4 id="org8bdcbb3">skip effect by pass second argument</h4>
 <div class="org-src-container">
 
 <pre><code class="javascript" >// old way
@@ -480,8 +480,8 @@ useEffect(() => {
 </code></pre>
 </div>
 </section>
-<section id="slide-orgcac0842">
-<h3 id="orgcac0842">Rules of Hooks and Why</h3>
+<section id="slide-org7c1aaf9">
+<h3 id="org7c1aaf9">Rules of Hooks and Why</h3>
 <ul>
 <li>Only call hooks at the top level(Don’t call inside loops, conditions, or nested functions)</li>
 <li>Only call Hooks from React function components or call hooks in custom Hooks</li>
@@ -489,13 +489,13 @@ useEffect(() => {
 
 </ul>
 </section>
-<section id="slide-org59dbc8d">
-<h3 id="org59dbc8d">Hooks and javascript closures</h3>
+<section id="slide-org3ab4ba0">
+<h3 id="org3ab4ba0">Hooks and javascript closures</h3>
 </section>
 </section>
 <section>
-<section id="slide-org84d13b3">
-<h2 id="org84d13b3">Is hooks ready for today?</h2>
+<section id="slide-orgeb0077f">
+<h2 id="orgeb0077f">Is hooks ready for today?</h2>
 <ul>
 <li>technically, yes, is in v16.7.0-alpha</li>
 <li>but you better to try this on non-critical component first</li>
@@ -504,8 +504,8 @@ useEffect(() => {
 </section>
 </section>
 <section>
-<section id="slide-org171aa1a">
-<h2 id="org171aa1a">Q&amp;A</h2>
+<section id="slide-orged234da">
+<h2 id="orged234da">Q&amp;A</h2>
 <ul>
 <li><a href="https://reactjs.org/docs/hooks-faq.html">https://reactjs.org/docs/hooks-faq.html</a></li>
 
@@ -513,8 +513,8 @@ useEffect(() => {
 </section>
 </section>
 <section>
-<section id="slide-orga2b78f3">
-<h2 id="orga2b78f3">Thanks</h2>
+<section id="slide-orga8ba2de">
+<h2 id="orga8ba2de">Thanks</h2>
 </section>
 </section>
 </div>

@@ -6,19 +6,19 @@
 <style type="text/css">
 .underline { text-decoration: underline; }
 </style>
-<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/reveal.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/reveal.js/3.0.0/css/reveal.css"/>
 
-<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/theme/moon.css" id="theme"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/reveal.js/3.0.0/css/theme/moon.css" id="theme"/>
 
 <link rel="stylesheet" href="./styling.css"/>
-<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/css/zenburn.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/reveal.js/3.0.0/lib/css/zenburn.css"/>
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
     if( window.location.search.match( /print-pdf/gi ) ) {
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = 'http://cdn.jsdelivr.net/reveal.js/3.0.0/css/print/pdf.css';
+        link.href = 'https://cdn.jsdelivr.net/reveal.js/3.0.0/css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
     }
 </script>
@@ -29,42 +29,42 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,900" rel="stylesheet">
 
 <section>
-<section id="slide-orgec93149">
-<h2 id="orgec93149">Introduce to React Hooks</h2>
+<section id="slide-orgdfdda4d">
+<h2 id="orgdfdda4d">Introduce to React Hooks</h2>
 <div class="logo-heading"></div><div class="logo"><span></span><span></span><span></span></div>
 </section>
 </section>
 <section>
-<section id="slide-org8cb8d79">
-<h2 id="org8cb8d79">What is React Hooks</h2>
+<section id="slide-org1056f7e">
+<h2 id="org1056f7e">What is React Hooks</h2>
 <blockquote>Use state and other React features without writing a class</blockquote>
 </section>
-<section id="slide-org1f53388">
-<h3 id="org1f53388">What's the problem now</h3>
-<div class="outline-text-3" id="text-org1f53388">
+<section id="slide-org6ae73cb">
+<h3 id="org6ae73cb">What's the problem now</h3>
+<div class="outline-text-3" id="text-org6ae73cb">
 </div>
 </section>
-<section id="slide-orga1bc5d5">
-<h4 id="orga1bc5d5">Reuse stateful logic between components</h4>
+<section id="slide-orgc507eeb">
+<h4 id="orgc507eeb">Reuse stateful logic between components</h4>
 <ul>
 <li>Existing way: render props and higher order components</li>
 <li>example: Media query component or windows width change or React Motion?</li>
 
 </ul>
 </section>
-<section id="slide-org7644539">
-<h4 id="org7644539">Wrapper Hell</h4>
+<section id="slide-orge1de21c">
+<h4 id="orge1de21c">Wrapper Hell</h4>
 <img class="stretch" src="https://cdn-images-1.medium.com/max/1600/1*SU5_ws88Kh_Oio_L4Myhvg.png">
 </section>
-<section id="slide-org9273f5e">
-<h4 id="org9273f5e">Wrapper Hell</h4>
+<section id="slide-orgb48c7a4">
+<h4 id="orgb48c7a4">Wrapper Hell</h4>
 <ul>
 <li>because we're using HOC, so we have wrapper hell</li>
 
 </ul>
 </section>
-<section id="slide-org30c0da0">
-<h4 id="org30c0da0">Complex components become hard to understand</h4>
+<section id="slide-orgbc1e7e3">
+<h4 id="orgbc1e7e3">Complex components become hard to understand</h4>
 <ul>
 <li>addEventListener in two place(CDM, CWM)</li>
 <li>ajaxCall in CDM and CDU</li>
@@ -72,8 +72,8 @@
 
 </ul>
 </section>
-<section id="slide-org81258c3">
-<h4 id="org81258c3">Confusing classes</h4>
+<section id="slide-orgbb979a3">
+<h4 id="orgbb979a3">Confusing classes</h4>
 <ul>
 <li>how `this` works?</li>
 <li>when to use class and when to use function?</li>
@@ -83,8 +83,8 @@
 </section>
 </section>
 <section>
-<section id="slide-org1435650">
-<h2 id="org1435650">Hooks demo</h2>
+<section id="slide-org91c5d60">
+<h2 id="org91c5d60">Hooks demo</h2>
 <div class="org-src-container">
 
 <pre><code class="javascript" >import React, { Fragment, useState } from 'react';
@@ -156,8 +156,8 @@ export function Greeting() {
 </section>
 </section>
 <section>
-<section id="slide-org3e75544">
-<h2 id="org3e75544">Basic concept of hooks</h2>
+<section id="slide-org7f37299">
+<h2 id="org7f37299">Basic concept of hooks</h2>
 <ul>
 <li>useState</li>
 <li>useEffect</li>
@@ -166,8 +166,8 @@ export function Greeting() {
 
 </ul>
 </section>
-<section id="slide-orgeabb4ff">
-<h3 id="orgeabb4ff">useState</h3>
+<section id="slide-org25358d8">
+<h3 id="org25358d8">useState</h3>
 <div class="org-src-container">
 
 <pre><code class="javascript" >function ExampleWithManyStates() {
@@ -180,8 +180,8 @@ export function Greeting() {
 </code></pre>
 </div>
 </section>
-<section id="slide-orgd6e26ad">
-<h3 id="orgd6e26ad">useEffect</h3>
+<section id="slide-org82896ef">
+<h3 id="org82896ef">useEffect</h3>
 <ul>
 <li>side effects -  can affect other components and can’t be done during rendering</li>
 <li>React runs the effects after every render — including the first render</li>
@@ -190,8 +190,8 @@ export function Greeting() {
 
 </ul>
 </section>
-<section id="slide-orgb7a661d">
-<h3 id="orgb7a661d">useEffect</h3>
+<section id="slide-orge575976">
+<h3 id="orge575976">useEffect</h3>
 <p>
 cDM &amp; cDU
 </p>
@@ -219,8 +219,8 @@ function Example() {
 </code></pre>
 </div>
 </section>
-<section id="slide-orgac96ff4">
-<h3 id="orgac96ff4">useEffect</h3>
+<section id="slide-orgc5aaf1d">
+<h3 id="orgc5aaf1d">useEffect</h3>
 <p>
 cWU
 </p>
@@ -251,8 +251,8 @@ function FriendStatus(props) {
 </code></pre>
 </div>
 </section>
-<section id="slide-orgdc1a63b">
-<h3 id="orgdc1a63b">Custom Hooks</h3>
+<section id="slide-orgfc3e68a">
+<h3 id="orgfc3e68a">Custom Hooks</h3>
 <ul>
 <li>replace igher-order components and render props for reuse statefull logic</li>
 <li>naming convention is `useSomething`</li>
@@ -260,8 +260,8 @@ function FriendStatus(props) {
 
 </ul>
 </section>
-<section id="slide-orgdd52981">
-<h3 id="orgdd52981">Custom Hooks</h3>
+<section id="slide-org7dc82f3">
+<h3 id="org7dc82f3">Custom Hooks</h3>
 <div class="org-src-container">
 
 <pre><code class="javascript" >import React, { Fragment, useState, useEffect } from 'react';
@@ -317,8 +317,8 @@ export function CustomHook() {
 </code></pre>
 </div>
 </section>
-<section id="slide-org08d7898">
-<h3 id="org08d7898">useContext</h3>
+<section id="slide-org9f3ee25">
+<h3 id="org9f3ee25">useContext</h3>
 <ul>
 <li>new Context API released in react 16.3</li>
 
@@ -333,8 +333,8 @@ export function CustomHook() {
 </code></pre>
 </div>
 </section>
-<section id="slide-orgd0d878e">
-<h3 id="orgd0d878e">useReducer</h3>
+<section id="slide-org296085c">
+<h3 id="org296085c">useReducer</h3>
 <p>
 Use hooks like redux
 </p>
@@ -401,8 +401,8 @@ export default PokemonInfo;
 </code></pre>
 </div>
 </section>
-<section id="slide-org56d8da2">
-<h3 id="org56d8da2">other hooks</h3>
+<section id="slide-org6bd138b">
+<h3 id="org6bd138b">other hooks</h3>
 <ul>
 <li>useRef</li>
 <li>useMemo</li>
@@ -412,27 +412,27 @@ export default PokemonInfo;
 </section>
 </section>
 <section>
-<section id="slide-org8720fb5">
-<h2 id="org8720fb5">How react hooks works under the hood?</h2>
-<div class="outline-text-2" id="text-org8720fb5">
+<section id="slide-org94822d2">
+<h2 id="org94822d2">How react hooks works under the hood?</h2>
+<div class="outline-text-2" id="text-org94822d2">
 </div>
 </section>
-<section id="slide-orga451529">
-<h3 id="orga451529">when react will call useEffect?</h3>
+<section id="slide-org34eddf3">
+<h3 id="org34eddf3">when react will call useEffect?</h3>
 <p>
 By using this Hook, you tell React that your component needs to do something after render. React will remember the function you passed (we’ll refer to it as our “effect”), and call it later after performing the DOM updates.
 </p>
 </section>
-<section id="slide-org507fda2">
-<h3 id="org507fda2">Does useEffect run after every render?</h3>
+<section id="slide-orgbd8f828">
+<h3 id="orgbd8f828">Does useEffect run after every render?</h3>
 <ul>
 <li>Yes! By default, it runs both after the first render and after every update.</li>
 <li>but you can pass second argument to skip effect</li>
 
 </ul>
 </section>
-<section id="slide-orge36594d">
-<h4 id="orge36594d">effect will run after every render</h4>
+<section id="slide-org8632575">
+<h4 id="org8632575">effect will run after every render</h4>
 <div class="org-src-container">
 
 <pre><code class="javascript" >function FriendStatus(props) {
@@ -462,8 +462,8 @@ ChatAPI.unsubscribeFromFriendStatus(300, handleStatusChange); // Clean up last e
 </code></pre>
 </div>
 </section>
-<section id="slide-org8bdcbb3">
-<h4 id="org8bdcbb3">skip effect by pass second argument</h4>
+<section id="slide-org3560cfb">
+<h4 id="org3560cfb">skip effect by pass second argument</h4>
 <div class="org-src-container">
 
 <pre><code class="javascript" >// old way
@@ -480,8 +480,8 @@ useEffect(() => {
 </code></pre>
 </div>
 </section>
-<section id="slide-org7c1aaf9">
-<h3 id="org7c1aaf9">Rules of Hooks and Why</h3>
+<section id="slide-org8aeb50b">
+<h3 id="org8aeb50b">Rules of Hooks and Why</h3>
 <ul>
 <li>Only call hooks at the top level(Don’t call inside loops, conditions, or nested functions)</li>
 <li>Only call Hooks from React function components or call hooks in custom Hooks</li>
@@ -489,13 +489,13 @@ useEffect(() => {
 
 </ul>
 </section>
-<section id="slide-org3ab4ba0">
-<h3 id="org3ab4ba0">Hooks and javascript closures</h3>
+<section id="slide-org403e01b">
+<h3 id="org403e01b">Hooks and javascript closures</h3>
 </section>
 </section>
 <section>
-<section id="slide-orgeb0077f">
-<h2 id="orgeb0077f">Is hooks ready for today?</h2>
+<section id="slide-org71b0706">
+<h2 id="org71b0706">Is hooks ready for today?</h2>
 <ul>
 <li>technically, yes, is in v16.7.0-alpha</li>
 <li>but you better to try this on non-critical component first</li>
@@ -504,8 +504,8 @@ useEffect(() => {
 </section>
 </section>
 <section>
-<section id="slide-orged234da">
-<h2 id="orged234da">Q&amp;A</h2>
+<section id="slide-org7bd83ba">
+<h2 id="org7bd83ba">Q&amp;A</h2>
 <ul>
 <li><a href="https://reactjs.org/docs/hooks-faq.html">https://reactjs.org/docs/hooks-faq.html</a></li>
 
@@ -513,14 +513,14 @@ useEffect(() => {
 </section>
 </section>
 <section>
-<section id="slide-orga8ba2de">
-<h2 id="orga8ba2de">Thanks</h2>
+<section id="slide-orgb837777">
+<h2 id="orgb837777">Thanks</h2>
 </section>
 </section>
 </div>
 </div>
-<script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/head.min.js"></script>
-<script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/js/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/head.min.js"></script>
+<script src="https://cdn.jsdelivr.net/reveal.js/3.0.0/js/reveal.js"></script>
 
 <script>
 // Full list of configuration options available here:
@@ -547,7 +547,7 @@ multiplex: {
 
 // Optional libraries used to extend on reveal.js
 dependencies: [
- { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }]
+ { src: 'https://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }]
 });
 </script>
 </body>
